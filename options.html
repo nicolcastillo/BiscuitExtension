@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buiscit Extension Options</title>
+        <link rel="stylesheet" href="optionsLight.css">
+    </head>
+    <body>
+        <div class="bodyType">
+            <div class="selectionTop" id="urlSelection">
+                <div class="left"><div class="titleL">
+                    Enter website url:
+                </div>
+                </div>
+                <div class="right">
+                    <div class="itemR">
+                        <input class="inputURL" type="urlWebsite" id="urlWebsite" pattern="http." required>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="selectionMiddle" id="ColorModeSelection">
+                <div class="left">
+                    <div class="titleL">
+                        Color mode:
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="optline">
+                        <div class="opt">
+                            <div class="rcol">
+                                <div class="radioType">
+                                    <input type="radio" id="opt1" name="colorMode" value="light">
+                                </div>
+                                <div class="labelType">
+                                    <label for="opt1">light</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="optSep"></div>
+                        <div class="opt">
+                            <div class="rcol">
+                                <div class="radioType">
+                                    <input type="radio" id="opt2" name="colorMode" value="dark">
+                                </div>
+                                <div class="labelType">
+                                    <label for="opt2">dark</label>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="optNone">
+                            <div class="rcol">
+                                <div class="radioType">
+                                    <label></label>
+                                </div>
+                                <div class="labelType">
+                                    <label></label>
+                                </div>
+                                <label></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="selectionMiddle" id="VersionSelecion">
+                <div class="left">
+                    <div class="titleL">
+                        Extension mode:
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="optline">
+                        <div class="opt">
+                            <div class="rcol">
+                                <div class="radioType">
+                                    <input type="radio" id="opt1" name="extensionMode" value="basic">
+                                </div>
+                                <div class="labelType">
+                                    <label for="opt1">basic</label>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="optSep"></div>
+                        <div class="opt">
+                            <div class="rcol">
+                                <div class="radioType">
+                                    <input type="radio" id="opt2" name="extensionMode" value="basicR">
+                                </div>
+                                <div class="labelType">
+                                    <label title="add buiscit Reset" for="opt2">basic +R*</label>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="optSep"></div>
+                        <div class="opt">
+                            <div class="rcol">
+                                <div class="radioType">
+                                    <input type="radio" id="opt3" name="extensionMode" value="extended">
+                                </div>
+                                <div class="labelType">
+                                    <label for="opt3">extended</label>
+                                </div>                            
+                            </div>
+                        </div>
+                          
+                        
+                    </div> 
+                </div>
+            </div>
+            <div class="selectionEX">
+                <div class="selectionTop" id="ExtendSelection">
+                    <div class="left">
+                        <div class="titleL">
+                            Extend with:
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="optline">
+                            <div class="opt">
+                                <div class="rcol">
+                                    <div class="radioType">
+                                        <input type="checkbox" id="add1" name="extFeatures" value="add1">
+                                    </div>
+                                    <div class="labelType">
+                                        <label for="opt1">other1</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="optSep"></div>
+                            <div class="opt">
+                                <div class="rcol">
+                                    <div class="radioType">
+                                        <input type="checkbox" id="add2" name="extFeatures" value="add2">
+                                    </div>
+                                    <div class="labelType">
+                                        <label for="opt2">other2</label>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="optSep"></div>
+                            <div class="opt">
+                                <div class="rcol">
+                                <div class="radioType">
+                                    <input type="checkbox" id="add3" name="extFeatures" value="add3">
+                                </div>
+                                <div class="labelType">
+                                    <label for="opt3">other3</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="selectionEX">
+                <div class="selectionMiddle" id="ExtendSelection">
+                    <div class="leftNone">
+                        <div class="titleL">
+                            2
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="optline">
+                            <div class="opt">
+                                <div class="rcol">
+                                    <div class="radioType">
+                                        <input type="checkbox" id="add1" name="extFeatures" value="other4">
+                                    </div>
+                                    <div class="labelType">
+                                        <label for="other4">other4</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="optSep"></div>
+                            <div class="opt">
+                                <div class="rcol">
+                                    <div class="radioType">
+                                        <input type="checkbox" id="add2" name="extFeatures" value="other5">
+                                    </div>
+                                    <div class="labelType">
+                                        <label for="other5">other5</label>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="optSep"></div>
+                            <div class="opt">
+                                <div class="rcol">
+                                    <div class="radioType">
+                                        <input type="checkbox" id="add3" name="extFeatures" value="other5">
+                                    </div>
+                                    <div class="labelType">
+                                        <label for="opt3">other6</label>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="selectionEX">
+                    <div class="selectionMiddle" id="ExtendSelection">
+                        <div class="leftNone">
+                            <div class="titleL">
+                                3
+                            </div>
+                        </div>
+                            <div class="right">
+                                <div class="optline">
+                                    <div class="opt">
+                                        <div class="rcol">
+                                            <div class="radioType">
+                                                <input type="checkbox" id="add1" name="extFeatures" value="add1">
+                                            </div>
+                                            <div class="labelType">
+                                                <label for="opt1">other7</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="optSep"></div>
+                                    <div class="opt">
+                                        <div class="rcol">
+                                            <div class="radioType">
+                                                <input type="checkbox" id="add2" name="extFeatures" value="add2">
+                                            </div>
+                                            <div class="labelType">
+                                                <label for="opt2">other8</label>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="optSep"></div>
+                                    <div class="opt">
+                                        <div class="rcol">
+                                        <div class="radioType">
+                                            <input type="checkbox" id="add3" name="extFeatures" value="add3">
+                                        </div>
+                                        <div class="labelType">
+                                            <label for="opt3">other9</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>        
+                        </div>
+                    </div>
+                </div>
+                <div class="selectionEX">
+                    <div class="selectionMiddle" id="ExtendSelection">
+                        <div class="leftNone">
+                            <div class="titleL">
+                                4
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="optline">
+                                <div class="opt">
+                                    <div class="rcol">
+                                        <div class="radioType">
+                                            <input type="checkbox" id="add1" name="extFeatures" value="add1">
+                                        </div>
+                                        <div class="labelType">
+                                            <label for="opt1">other10</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="optSep"></div>
+                                <div class="opt">
+                                    <div class="rcol">
+                                        <div class="radioType">
+                                            <input type="checkbox" id="add2" name="extFeatures" value="add2">
+                                        </div>
+                                        <div class="labelType">
+                                            <label for="opt2">other12</label>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="optSep"></div>
+                                <div class="opt">
+                                    <div class="rcol">
+                                        <div class="radioType">
+                                            <input type="checkbox" id="add3" name="extFeatures" value="add3">
+                                        </div>
+                                        <div class="labelType">
+                                            <label for="opt3">other13</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="selectionEX">
+                        <div class="selectionMiddle" id="ExtendSelection">
+                            <div class="leftNone">
+                                <div class="titleL">
+                                    5
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="optline">
+                                    <div class="opt">
+                                        <div class="rcol">
+                                            <div class="radioType">
+                                                <input type="checkbox" id="add1" name="extFeatures" value="add1">
+                                            </div>
+                                            <div class="labelType">
+                                                <label for="opt1">other14</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="optSep"></div>
+                                    <div class="opt">
+                                        <div class="rcol">
+                                            <div class="radioType">
+                                                <input type="checkbox" id="add2" name="extFeatures" value="add2">
+                                            </div>
+                                            <div class="labelType">
+                                                <label for="opt2">other15</label>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                    <div class="optSep"></div>
+                                    <div class="opt">
+                                        <div class="rcol">
+                                            <div class="radioType">
+                                                <input type="checkbox" id="add3" name="extFeatures" value="add3">
+                                            </div>
+                                            <div class="labelType">
+                                                <label for="opt3">other16</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="selectionEX">
+                    <div class="selectionMiddle" id="ExtendSelection">
+                        <div class="leftNone">
+                            <div class="titleL">
+                                6
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="optline">
+                                <div class="opt">
+                                    <div class="rcol">
+                                        <div class="radioType">
+                                            <input type="checkbox" id="add1" name="extFeatures" value="add1">
+                                        </div>
+                                        <div class="labelType">
+                                            <label for="opt1">other17</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="optSep"></div>
+                                <div class="opt">
+                                    <div class="rcol">
+                                        <div class="radioType">
+                                            <input type="checkbox" id="add2" name="extFeatures" value="add2">
+                                        </div>
+                                        <div class="labelType">
+                                            <label for="opt2">other18</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="optSep"></div>
+                                <div class="opt">
+                                    <div class="rcol">
+                                        <div class="radioType">
+                                            <input type="checkbox" id="add3" name="extFeatures" value="add3">
+                                        </div>
+                                        <div class="labelType">
+                                            <label for="opt3">other19</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="selectionEX">
+                    <div class="selectionBottom" id="ExtendSelection">
+                        <div class="leftNone">
+                            <div class="titleL">
+                                7
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="optline">
+                                <div class="opt">
+                                    <div class="rcol">
+                                        <div class="radioType">
+                                            <input type="checkbox" id="add1" name="extFeatures" value="add1">
+                                        </div>
+                                        <div class="labelType">
+                                            <label for="opt1">other20</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="optSep"></div>
+                                <div class="opt">
+                                    <div class="rcol">
+                                        <div class="radioType">
+                                            <input type="checkbox" id="add2" name="extFeatures" value="add2">
+                                        </div>
+                                        <div class="labelType">
+                                            <label for="opt2">other21</label>
+                                        </div>
+                                    </div> 
+                                </div>
+                                <div class="optSep"></div>
+                                <div class="opt">
+                                    <div class="rcol">
+                                        <button>reset selected</button>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="selectionEX">
+                    <div class="selectionBottom" id="SaveSelection">
+                        <div class="left">
+                            <div class="titleL">
+                                Execute:
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="optline">
+                                <div class="opt">
+                                    <div class="rcol">
+                                        <button>default setting</button>
+                                    </div>
+                                </div>
+                                <div class="optSep"></div>
+                                <div class="opt">
+                                    <div class="rcol">
+                                        <button>save setting</button>
+                                    </div>
+                                </div>
+                                <div class="optSep"></div>
+                                <div class="opt">
+                                    <div class="rcol">
+                                        <div class="radioType">
+                                            <input type="checkbox" id="add3" name="extFeatures" value="add3">
+                                        </div>
+                                        <div class="labelType">
+                                            <label for="opt3">other22</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

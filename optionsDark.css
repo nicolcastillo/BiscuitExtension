@@ -1,0 +1,32 @@
+.body{
+    padding: 2px;
+}
+
+.selection{
+    width: 500px;
+    background-color: aqua;
+    display: flex;
+    padding-right: 10px;
+}
+
+.left{
+    width: 40%;
+    background-color: brown;
+    padding: 5px;
+}
+
+.right{
+    width: 60%;
+    background-color: green;
+    padding: 5px;
+}
+
+input, label{
+    width: 100%;
+}
+
+.selectionEX{
+    width: 500px;
+    background-color: aqua;
+    display: none;
+}

@@ -1,0 +1,104 @@
+/* BUTTONS */
+button {
+  padding: 5px 5px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  /* outline: none; */
+  color: #fff;
+  background-color: #d61010;
+  border: 1px solid #b90909;
+  border-radius: 5px;
+  box-shadow: 0 9px #b42424;
+  width: 90px;
+}
+
+button:hover {
+  border-radius: 5px;
+  background-color: #ed1111;
+  box-shadow: 0 9px #941010;
+  }
+
+button:active {
+  background-color: #f72e2e;
+  box-shadow: 0 5px #4f0000;
+  border-radius: 5px;
+  transform: translateY(4px);
+}
+
+/* WINDOW SECTION*/
+.body{
+  width: 200px;
+  overflow: hidden;
+  outline: solid 2px #cf3232;
+}
+
+/* BUTTON SECTION*/
+.buttonSection{
+	width: 200px;
+	display: flex;
+}
+
+.elem{
+	padding:5px;
+	padding-bottom:15px;
+}
+
+/* FEEDBACK SECTION*/
+.feedback{
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  display: flex;
+  overflow-inline: hide;
+}
+
+.textAlert0{
+  width: 190px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 2;
+  /* background-color: deeppink; */
+}
+.textAlert1{
+  background-color: #ceffbb;
+  color:#368f13;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 3;
+  width: 190px;
+}
+.textAlert2{
+  background-color: #ffcfbd;
+  color: #d65425;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 1;
+  width: 190px;
+}
+.textAlert3{
+  background-color: #ffcfbd;
+  color: #d65425;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 1;
+  width: 190px;
+}
+
+/* ADDITIONAL FEATURES SECTION*/
+.additonalFeatures{
+  display: none;
+}
+.navSection{
+  display: none;
+}
+.eachSection1{
+  display: none;
+}
+
