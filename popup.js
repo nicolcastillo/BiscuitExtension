@@ -1,11 +1,10 @@
 var theme = 'biscuit'
 
-
-var red = "#8f0b0b"
-var light_red = '#ffcfbd'
-
-var green = "#1d4b0a"
-var light_green = "#ceffbb"
+var color_text = "#fff"
+var color_fail_dark = "#8f0b0b"
+var color_fail_light = '#ff8aa5'
+var color_succ_dark = "#1d4b0a"
+var color_succ_ligh = "#bbffca"
 
 // runs when window started
 document.addEventListener('DOMContentLoaded', function() {
@@ -47,7 +46,7 @@ function handler_csf(){
 		  },() => {
 			setTimeout(function(){f1()}, 0); 		// fail
 			setTimeout(function(){but1_f1()}, 0); 	// fail
-			});
+		});
 	});
 };
 
@@ -89,37 +88,37 @@ function s1() {
 	}, 1000);
 	setTimeout(function(){hide_popup()}, 1000);
 };
+
 // botton SUCCESS reaction
 function but1_s1() {
 	var But1 = document.getElementById("b1");
 
 	var But2 = document.getElementById("b2");
-	But2.style.backgroundColor = red;
-	But2.style.color = "#fff";
+	But2.style.backgroundColor = color_fail_dark;
+	But2.style.color = color_text;
 	
-	But1.style.backgroundColor = light_green;
-	But1.style.color = green;
+	But1.style.backgroundColor = color_succ_ligh;
+	But1.style.color = color_succ_dark;
 	setTimeout(function(){
-		But1.style.backgroundColor = red;
-		But1.style.color = "#fff";
+		But1.style.backgroundColor = color_fail_dark;
+		But1.style.color = color_text;
 	}, 1000);
 };
 function but2_s1() {
 	var But2 = document.getElementById("b2")
 
 	var But1 = document.getElementById("b1");
-	But1.style.backgroundColor = red;
-	But1.style.color = "#fff";
+	But1.style.backgroundColor = color_fail_dark;
+	But1.style.color = color_text;
 	
-	But2.style.backgroundColor = light_green;
-	But2.style.color = green;
+	But2.style.backgroundColor = color_succ_ligh;
+	But2.style.color = color_succ_dark;
 	
 	setTimeout(function(){
-		But2.style.backgroundColor = red;
-		But2.style.color = "#fff";
+		But2.style.backgroundColor = color_fail_dark;
+		But2.style.color = color_text;
 	}, 1000);
 };
-
 
 // display FAIL message
 function f1() {
@@ -141,53 +140,38 @@ function f1() {
 		fl.style.display = 'none';
 	}, 2000);
 	setTimeout(function(){hide_popup()}, 2000);
-
-
 };
+
 // botton FAIL reaction
 function but1_f1() {
-	var butR = document.getElementById("b1")
+	var butClicked = document.getElementById("b1")
+	var secondButton = document.getElementById("b2");
 
-	var But2 = document.getElementById("b2");
-	But2.style.backgroundColor = red;
-	But2.style.color = "#fff";
+	secondButton.style.backgroundColor = color_fail_dark;
+	secondButton.style.color = color_text;
 	
-	butR.style.backgroundColor = red;
-	butR.style.color = red;
+	butClicked.style.backgroundColor = color_fail_light;
+	butClicked.style.color = color_fail_dark;
 	
 	setTimeout(function(){
-		butR.style.backgroundColor = red;
-		butR.style.color = "#fff";
+		butClicked.style.backgroundColor = color_fail_dark;
+		butClicked.style.color = color_text;
 	}, 2000);
 	setTimeout(function(){hide_popup()}, 2000);
 };
 function but2_f1() {
-	var butR = document.getElementById("b2")
+	var butClicked = document.getElementById("b2")
+	var secondButton = document.getElementById("b1");
 
-	var But1 = document.getElementById("b1");
-
-
-	switch(theme){
-		case "basic":
-			But1.style.backgroundColor = red;
-			But1.style.color = "#fff";
-			
-			butR.style.backgroundColor = light_red;
-			butR.style.color = red;
-
-			break;
-	}
-
-
+	secondButton.style.backgroundColor = color_fail_dark;
+	secondButton.style.color = color_text;
+	
+	butClicked.style.backgroundColor = color_fail_light;
+	butClicked.style.color = color_fail_dark;
 	
 	setTimeout(function(){
-		switch(theme){
-			case "basic":
-				butR.style.backgroundColor = red;
-				butR.style.color = "#fff";
-				break;
-		}
-
+		butClicked.style.backgroundColor = color_fail_dark;
+		butClicked.style.color = color_text;
 	}, 2000);
 	setTimeout(function(){hide_popup()}, 2000);
 };
@@ -207,18 +191,10 @@ function fail_login_msg(){
 	var But1 = document.getElementById("b1")
 	var But2 = document.getElementById("b2");
 
-	switch(theme){
-		case "basic":
-			But1.style.backgroundColor = "#ffcfbd";
-			But1.style.color = red;
-		
-			But2.style.backgroundColor = "#ffcfbd";
-			But2.style.color = red;
-
-			break;
-	}
-
-
+	But1.style.backgroundColor = color_fail_light;
+	But1.style.color = color_fail_dark;
+	But2.style.backgroundColor = color_fail_light;
+	But2.style.color = color_fail_dark;
 
 	setTimeout(function(){
 		cb.style.display = 'block';
@@ -226,19 +202,12 @@ function fail_login_msg(){
 		sb.style.display = 'none';
 		fl.style.display = 'none';
 
-		switch(theme){
-			case "basic":
-				But1.style.backgroundColor = red;
-				But1.style.color = "#fff";
-		
-				But2.style.backgroundColor = red;
-				But2.style.color = "#fff";
+		But1.style.backgroundColor = color_fail_dark;
+		But1.style.color = color_text;
 
-				break;
-		}
-
-
-	}, 2000);
+		But2.style.backgroundColor = color_fail_dark;
+		But2.style.color = color_text;
+		}, 2000);
 
 	setTimeout(function(){hide_popup()}, 2000);
 }
