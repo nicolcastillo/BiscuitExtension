@@ -42,14 +42,14 @@ Extension to boost time efficiency while working with cookie values.
   <img src="images/setUp/clone.png" alt="clone repo">
   </li>
 <li style="padding-top:10px">go to <a href="chrome://extensions/">chrome extensions</a><br>
-  <img src="images/setUp/extensions.png" alt="extension appearence">
+  <img src="images/setUp/devMode.png" alt="extension appearence">
   </li>
   <!-- <ul>
   <li>
     </li>
   </ul> -->
-<li style="padding-top:10px">turn no the developer mode<br>
-  <img src="images/setUp/devMode.png" alt="developer mode activated">
+<li style="padding-top:10px">turn ON the developer mode<br>
+  <img src="images/setUp/extensions.png" alt="developer mode activated">
   </li>
   <!-- <ul>
   <li>
@@ -57,10 +57,12 @@ Extension to boost time efficiency while working with cookie values.
   </ul> -->
 <li style="padding-top:10px">select 'LOAD UNPACKED'
   </li>
+  
   <ul>
   <li>find the loceation of the cloned reposiotry
     </li>
-  <li ><img src="images/setUp/added.png" alt="in extensions">
+  <li>
+  <img src="images/setUp/added.png" alt="in extensions">
     </li>
   </ul>
 <li style="padding-top:15px; border-top:dotted 1px">* additional steps
