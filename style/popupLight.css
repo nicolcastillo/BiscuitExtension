@@ -7,32 +7,36 @@ button {
   text-align: center;
   text-decoration: none;
   /* outline: none; */
-  color: #fff;
-  background-color: #d61010;
-  border: 1px solid #b90909;
+  color:rgb(235, 228, 195);
+  background-color: #422101;
+  border: 1px solid #000;
   border-radius: 5px;
-  box-shadow: 0 9px #b42424;
+  box-shadow: 0 9px #241303;
   width: 90px;
 }
 
 button:hover {
   border-radius: 5px;
-  background-color: #ed1111;
-  box-shadow: 0 9px #941010;
+  background-color: #74481f;
+  box-shadow: 0 9px #241303;
+  color:#dab778;
   }
 
 button:active {
-  background-color: #f72e2e;
+  background-color: #a17247;
   box-shadow: 0 5px #4f0000;
   border-radius: 5px;
   transform: translateY(4px);
+}
+body{
+  background-color: rgb(235, 228, 195);
 }
 
 /* WINDOW SECTION*/
 .body{
   width: 200px;
   overflow: hidden;
-  outline: solid 2px #cf3232;
+  outline: solid 2px #422101;
 }
 
 /* BUTTON SECTION*/
@@ -55,41 +59,28 @@ button:active {
   overflow-inline: hide;
 }
 
-.textAlert0{
-  width: 190px;
+.textAlert0, .textAlert1, .textAlert2, .textAlert3{
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px;
+  width: 190px;
+}
+
+.textAlert0{
   z-index: 2;
   /* background-color: deeppink; */
 }
 .textAlert1{
-  background-color: #ceffbb;
-  color:#368f13;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  background-color: #1d4b0a;
+  color: #fff;
   z-index: 3;
-  width: 190px;
 }
-.textAlert2{
-  background-color: #ffcfbd;
-  color: #d65425;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
+.textAlert2, .textAlert3{
+  background-color: #8f0b0b;
+  color: #fff;
   z-index: 1;
-  width: 190px;
 }
-.textAlert3{
-  background-color: #ffcfbd;
-  color: #d65425;
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  z-index: 1;
-  width: 190px;
-}
+
 
 /* ADDITIONAL FEATURES SECTION*/
 .additonalFeatures{
