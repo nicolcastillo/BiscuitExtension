@@ -31,6 +31,7 @@ Extension to boost time efficiency while working with cookie values.
 
  - Chrome version above <a style="color:inherit" title="to check: chrome://settings/help" href="chrome://settings/help">**Chrome 88 Beta**</a>
  - logged to <a style="color:inherit" href="https://rol.redhat.com/rol/app/"><u>rol.redhat.com</u></a>
+ - connected to vpn
 
 ---
 
