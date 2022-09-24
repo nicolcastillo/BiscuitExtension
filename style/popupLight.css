@@ -8,35 +8,35 @@ button {
   text-decoration: none;
   /* outline: none; */
   color:rgb(235, 228, 195);
-  background-color: #422101;
+  background-color: #703800;
   border: 1px solid #000;
   border-radius: 5px;
-  box-shadow: 0 9px #241303;
+  box-shadow: 0 9px #3c1f05;
   width: 90px;
 }
 
 button:hover {
   border-radius: 5px;
   background-color: #74481f;
-  box-shadow: 0 9px #241303;
+  box-shadow: 0 9px #3c1f05;
   color:#dab778;
   }
 
 button:active {
   background-color: #a17247;
-  box-shadow: 0 5px #4f0000;
+  box-shadow: 0 5px #6b3709;
   border-radius: 5px;
   transform: translateY(4px);
 }
 body{
-  background-color: rgb(235, 228, 195);
+  background-color: #f8f5e9;
 }
 
 /* WINDOW SECTION*/
 .body{
   width: 200px;
   overflow: hidden;
-  outline: solid 2px #422101;
+  outline: solid 2px #703800;
 }
 
 /* BUTTON SECTION*/
