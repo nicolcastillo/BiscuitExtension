@@ -78,7 +78,9 @@ Extension to boost time efficiency while working with cookie values.
 ---
 
 <h2 id="copy" style="padding-top: 15px">COPY functionality</h3>
+<p><i>*session_id replaced with sessionid_prod</i>
 
+</p>
 <ul>
   <li>The first screen of the app should appear as below<br><img src="images/setUp/window.png" alt="">
     </li>
